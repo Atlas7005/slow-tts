@@ -203,6 +203,7 @@ if (urlParams.get('channelname') !== null) {
     document.querySelector("#channelname").value = urlParams.get('channelname');
     document.getElementById('announcechatter').checked = true;
     document.getElementById('exclude-toggle').checked = true;
+    document.getElementById('exclude-options').classList.remove('d-none');
     fillInBots();
     startListening();
 };
